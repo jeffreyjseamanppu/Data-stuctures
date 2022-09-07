@@ -51,17 +51,28 @@ console.log("Control structures");
 // 1. Write an if statement that prints the number of days in a month to the console (using 3 letter abbreviations).
 var month = "jun";
 // ... put if here ...
-function printMonth( ){
-  print("31")
-  if(month = true);
+
+function getNnumberOfDays(month) {
+  if(month === "jan" || month === "mar" || month === "may" || month === "jul") {
+    console.log("the month of " + month + " has 31 days")
+  }
+  else if(month === "apr" || month === "jun" || month === "sep" || month === "nov"){
+    console.log("the month of " + month + " has 30 days")
+  }
+  else if(month === "feb") {
+    console.log("the month of " + month + " has 28 days")
+  }
 }
+getNumberOfDays("mar");
 // 2. Write a loop to calculate 1+2+3+...+n and print it to the console.
 var n = 50;
 // ... put loop here ...
-for(var i = 1; i < 11; i += 1) {
-  n += i + "50";
+var total = 0;
+
+for(var i = 1; i < 50; i ++) {
+  total += i;
 }
-console.log(n);
+console.log("total sum is " + total);
 
 //-----------//
 // Functions //
@@ -70,8 +81,13 @@ console.log("Functions");
 
 // 1. Write a function to check if an array contains a specific number but is not at the start or the end.
 function checkForNumber(arr, num) {
+  if(arr[0] === num || arr[arr.length-1] === num) {
+    return false;
+}
+//for loop for proiding a true pattern
+// default value if neither solutions were evaluated.
    for (var i = 0; i < a.length; i++){
-     if (a[i] === obj) {
+     if (a[i] === num) {
        return true;
      }
    }
