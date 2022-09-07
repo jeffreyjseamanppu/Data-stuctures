@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta charset = "utf-8">
+<title> CMPS 260: Module 2 homework </title>
+<style>* { font-family: monospace; }</style>
+<script>
+    //check the weather forecast for the next 5 days and store
+
+var day1 = 79;
+var day2 = 78;
+var day3 = 79;
+var day4 = 82;
+var day5 = 82;
+var average = (day1+day2+day3+day4+day5) / 5;
+console.log("the avg temp is " + average)
+
+// do it in an array
+
+var temps = [79,78,79,82,82];
+//sum all the temps
+for (var i =0; i < temps.length; i++) {
+    sum = sum + temp[i];
+}
+
+//math
+var avg =sum / temps.length
+
+console.log("the avg temp is " + avg);
+
+
+//creating and intializing arrays
+var daysOfTheWeek1 = new Array();
+var daysOfTheWeek2 = new Array("sunday","monday","tuesday","wednesday","thursday","friday","saturday")
+var daysOfTheWeek3 = [];
+var daysOfTheWeek4 = new Array("sunday","monday","tuesday","wednesday","thursday","friday","saturday")
+
+//length of the array
+console.log("1: " + daysOfTheWeek1.length)
+console.log("2: " + daysOfTheWeek2.length)
+console.log("3: " + daysOfTheWeek3.length)
+console.log("4: " + daysOfTheWeek4.length)
+
+// adding elements he does this in chrome
+var arr = [1,2,3,4,5,6,7,8,9];
+// add at the end of the array
+arr.push(10);
+console.log(arr);
+arr.push(10);
+arr.push(10);
+console.log(arr);
+
+var teams =["steelers","Browns"];
+console.log(teams)
+teams.push("Ravens")
+console.log(teams)
+
+teams.unshift("Bengals");
+console.log(teams)
+
+console.log(teams.length)
+
+//removing an array
+
+teams.pop();
+console.log(teams)
+teams.pop();
+console.log(teams)
+
+//move from the beginning
+
+teams.shift(0);
+console.log(teams)
+teams.push("ravens")
+
+// adding and removing elements from a specific location
+teams.splice(1,teams.length-2);
